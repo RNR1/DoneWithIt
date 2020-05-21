@@ -1,0 +1,46 @@
+[
+	{
+		"id": 1,
+		"label": "Furniture",
+		"icon": "floor-lamp",
+		"backgroundColor": "#fc5c65"
+	},
+	{ "id": 2, "label": "Cars", "icon": "car", "backgroundColor": "#fd9644" },
+	{
+		"id": 3,
+		"label": "Cameras",
+		"icon": "camera",
+		"backgroundColor": "#fed330"
+	},
+	{ "id": 4, "label": "Games", "icon": "cards", "backgroundColor": "#26de81" },
+	{
+		"id": 5,
+		"label": "Clothing",
+		"icon": "shoe-heel",
+		"backgroundColor": "#2bcbba"
+	},
+	{
+		"id": 6,
+		"label": "Sports",
+		"icon": "basketball",
+		"backgroundColor": "#45aaf2"
+	},
+	{
+		"id": 7,
+		"label": "Media",
+		"icon": "headphones",
+		"backgroundColor": "#4b7bec"
+	},
+	{
+		"id": 8,
+		"label": "Books",
+		"icon": "book-open-variant",
+		"backgroundColor": "#9A67E2"
+	},
+	{
+		"id": 9,
+		"label": "Other",
+		"icon": "window-maximize",
+		"backgroundColor": "#7C8CA1"
+	}
+]
