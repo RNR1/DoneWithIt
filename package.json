@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@react-native-community/hooks": "^2.5.1",
-    "expo": "~37.0.3",
+    "expo": "^37.0.12",
     "expo-constants": "^9.0.0",
     "formik": "^2.1.4",
     "react": "~16.9.0",
@@ -20,8 +20,8 @@
     "yup": "^0.28.5"
   },
   "devDependencies": {
-    "babel-preset-expo": "~8.1.0",
-    "@babel/core": "^7.8.6"
+    "@babel/core": "^7.10.2",
+    "babel-preset-expo": "~8.1.0"
   },
   "private": true
 }
