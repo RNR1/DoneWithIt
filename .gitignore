@@ -12,3 +12,5 @@ web-report/
 
 # macOS
 .DS_Store
+Backend/node_modules
+Backend/config/development.json
