@@ -9,10 +9,11 @@ import {
 } from 'react-native'
 
 import Button from '../components/Button'
+import routes from '../navigation/routes'
 const WelcomeImage = require('../assets/background.jpg')
 const Logo = require('../assets/logo-red.png')
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ navigation }) {
 	return (
 		<ImageBackground
 			source={WelcomeImage}
@@ -23,8 +24,15 @@ export default function WelcomeScreen() {
 				<Text style={styles.tagline}>Sell What You Don't Need</Text>
 			</View>
 			<SafeAreaView style={styles.buttonContainer}>
-				<Button title='Login' />
-				<Button color='secondary' title='Register' />
+				<Button
+					title='Login'
+					onPress={() => navigation.navigate(routes.LOGIN)}
+				/>
+				<Button
+					color='secondary'
+					title='Register'
+					onPress={() => navigation.navigate(routes.REGISTER)}
+				/>
 			</SafeAreaView>
 		</ImageBackground>
 	)

@@ -1,9 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StyleSheet, View, FlatList } from 'react-native'
 
 import Screen from '../components/Screen'
-import ListItem from '../components/ListItem'
-import ListItemSeparator from '../components/lists/ListItemSeparator'
+import { ListItem, ListItemSeparator } from '../components/lists'
 import colors from '../config/colors'
 import Icon from '../components/Icon'
 
@@ -14,11 +13,12 @@ const items = [
 	},
 	{
 		title: 'My Messages',
+		screen: 'Messages',
 		icon: { name: 'email', color: colors.secondary }
 	}
 ]
 
-export default function MyAccountScreen() {
+export default function MyAccountScreen({ navigation }) {
 	return (
 		<Screen>
 			<ListItem
@@ -30,9 +30,11 @@ export default function MyAccountScreen() {
 			<View style={styles.actions}>
 				<FlatList
 					data={items}
+					keyExtractor={(item) => item.title}
 					renderItem={({ item }) => (
 						<ListItem
 							title={item.title}
+							onPress={() => navigation.navigate(item.screen)}
 							IconComponent={
 								<Icon name={item.icon.name} backgroundColor={item.icon.color} />
 							}
