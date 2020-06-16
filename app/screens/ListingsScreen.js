@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { FlatList } from 'react-native'
 
 import listingsApi from '../api/listings'
@@ -19,28 +19,30 @@ export default function ListingsScreen({ navigation }) {
 		loadListings()
 	}, [])
 	return (
-		<Screen>
-			{error && (
-				<>
-					<AppText>Couldn't retrieve the listings.</AppText>
-					<Button title='Retry' onPress={loadListings} />
-				</>
-			)}
+		<>
 			<ActivityIndicator visible={loading} />
-			<FlatList
-				data={listings}
-				keyExtractor={(listing) => listing.id.toString()}
-				renderItem={({ item }) => (
-					<Card
-						key={item.id}
-						title={item.title}
-						subTitle={`$${item.price}`}
-						imageUrl={item.images[0].url}
-						onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
-						thumbnailUrl={item.images[0].thumbnailUrl}
-					/>
+			<Screen>
+				{error && (
+					<>
+						<AppText>Couldn't retrieve the listings.</AppText>
+						<Button title='Retry' onPress={loadListings} />
+					</>
 				)}
-			/>
-		</Screen>
+				<FlatList
+					data={listings}
+					keyExtractor={(listing) => listing.id.toString()}
+					renderItem={({ item }) => (
+						<Card
+							key={item.id}
+							title={item.title}
+							subTitle={`$${item.price}`}
+							imageUrl={item.images[0].url}
+							onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
+							thumbnailUrl={item.images[0].thumbnailUrl}
+						/>
+					)}
+				/>
+			</Screen>
+		</>
 	)
 }
