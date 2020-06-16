@@ -8,6 +8,7 @@
 		"eject": "expo eject"
 	},
 	"dependencies": {
+		"@bugsnag/expo": "^7.1.1",
 		"@react-native-community/hooks": "^2.6.0",
 		"@react-native-community/masked-view": "0.1.6",
 		"@react-native-community/netinfo": "5.5.1",
@@ -15,16 +16,17 @@
 		"@react-navigation/native": "^5.5.1",
 		"@react-navigation/stack": "^5.5.1",
 		"apisauce": "^1.1.1",
+		"dayjs": "^1.8.28",
 		"expo": "^37.0.12",
 		"expo-blur": "~8.1.0",
 		"expo-constants": "^9.0.0",
 		"expo-image-picker": "~8.1.0",
 		"expo-location": "~8.1.0",
 		"expo-permissions": "~8.1.0",
+		"expo-secure-store": "~8.1.0",
 		"formik": "^2.1.4",
 		"jwt-decode": "^2.2.0",
 		"lottie-react-native": "~2.6.1",
-		"moment": "^2.26.0",
 		"react": "~16.9.0",
 		"react-devtools": "^3.6.3",
 		"react-dom": "~16.9.0",
@@ -36,8 +38,7 @@
 		"react-native-safe-area-context": "0.7.3",
 		"react-native-screens": "~2.2.0",
 		"react-native-web": "~0.11.7",
-		"yup": "^0.28.5",
-		"expo-secure-store": "~8.1.0"
+		"yup": "^0.28.5"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.10.2",

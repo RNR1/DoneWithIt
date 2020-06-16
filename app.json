@@ -16,8 +16,30 @@
 		},
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
-			"supportsTablet": true
+			"supportsTablet": true,
+			"bundleIdentifier": "com.codebyron.donewithit",
+			"buildNumber": "1.0.0"
 		},
-		"description": "A marketplace to sell the stuff you don't use anymore."
+		"android": {
+			"package": "com.codewithmosh.donewithit",
+			"version": 1
+		},
+		"description": "A marketplace to sell the stuff you don't use anymore.",
+		"notification": {
+			"iosDisplayInForeground": true
+		},
+		"extra": {
+			"bugsnag": {
+				"apiKey": "cb22f715cab95ca134998c9f6375d8ab"
+			}
+		},
+		"hooks": {
+			"postPublish": [
+				{
+					"file": "@bugsnag/expo/hooks/post-publish.js",
+					"config": {}
+				}
+			]
+		}
 	}
 }
