@@ -12,9 +12,9 @@
 		"@react-native-community/hooks": "^2.6.0",
 		"@react-native-community/masked-view": "0.1.6",
 		"@react-native-community/netinfo": "5.5.1",
-		"@react-navigation/bottom-tabs": "^5.6.1",
-		"@react-navigation/native": "^5.6.1",
-		"@react-navigation/stack": "^5.6.2",
+		"@react-navigation/bottom-tabs": "^5.7.2",
+		"@react-navigation/native": "^5.7.1",
+		"@react-navigation/stack": "^5.7.1",
 		"apisauce": "^1.1.1",
 		"dayjs": "^1.8.29",
 		"expo": "^37.0.12",
@@ -24,7 +24,7 @@
 		"expo-location": "~8.1.0",
 		"expo-permissions": "~8.1.0",
 		"expo-secure-store": "~8.1.0",
-		"formik": "^2.1.4",
+		"formik": "^2.1.5",
 		"jwt-decode": "^2.2.0",
 		"lottie-react-native": "~2.6.1",
 		"react": "~16.9.0",
@@ -41,7 +41,7 @@
 		"yup": "^0.28.5"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.10.4",
+		"@babel/core": "^7.10.5",
 		"babel-preset-expo": "~8.1.0"
 	},
 	"private": true
