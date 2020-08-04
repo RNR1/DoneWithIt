@@ -8,15 +8,15 @@
 		"eject": "expo eject"
 	},
 	"dependencies": {
-		"@bugsnag/expo": "^7.2.0",
+		"@bugsnag/expo": "^7.2.1",
 		"@react-native-community/hooks": "^2.6.0",
 		"@react-native-community/masked-view": "0.1.6",
 		"@react-native-community/netinfo": "5.5.1",
-		"@react-navigation/bottom-tabs": "^5.7.2",
-		"@react-navigation/native": "^5.7.1",
-		"@react-navigation/stack": "^5.7.1",
-		"apisauce": "^1.1.1",
-		"dayjs": "^1.8.29",
+		"@react-navigation/bottom-tabs": "^5.7.3",
+		"@react-navigation/native": "^5.7.2",
+		"@react-navigation/stack": "^5.8.0",
+		"apisauce": "^1.1.2",
+		"dayjs": "^1.8.31",
 		"expo": "^37.0.12",
 		"expo-blur": "^8.1.2",
 		"expo-constants": "^9.1.1",
@@ -41,7 +41,7 @@
 		"yup": "^0.28.5"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.10.5",
+		"@babel/core": "^7.11.0",
 		"babel-preset-expo": "~8.1.0"
 	},
 	"private": true
