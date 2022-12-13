@@ -17,7 +17,7 @@
     "compression": "^1.7.4",
     "config": "^3.3.2",
     "expo-server-sdk": "^3.6.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "helmet": "^3.23.3",
     "joi": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
